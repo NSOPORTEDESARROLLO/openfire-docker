@@ -1,0 +1,10 @@
+FROM	debian
+
+RUN		apt-get update; apt -y upgrade;apt -y install default-jre wget; \
+		wget -O /tmp/openfire.deb http://www.igniterealtime.org/downloadServlet?filename=openfire/openfire_4.3.2_all.deb; \
+		dpkg -i /tmp/openfire.deb
+
+
+
+
+
